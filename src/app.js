@@ -8,7 +8,7 @@ import './css/main.css';
 
 export default function App() {
   return (
-    <Router>
+ <Router>
       <div className="main">
         <Switch>
           <Route exact path="/dashboard">
