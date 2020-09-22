@@ -9,12 +9,15 @@ const productionConfig = merge([
   {
     output: {
       publicPath: '/',
-      publicPath: '/Player/',
+      publicPath: '/project/',
     },
   },
 ]);
 
 module.exports = {
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
   context: path.resolve(__dirname, 'src'),
   entry: './index.js',
   output: {
@@ -32,7 +35,6 @@ module.exports = {
   },
   plugins: [
     new HTMLWebpackPlugin({
-      template: 'index.html',
       minify: {
         collapseWhitespace: true,
       },

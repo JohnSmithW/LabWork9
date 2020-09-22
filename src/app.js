@@ -10,18 +10,21 @@ export default function App() {
   return (
     <Router>
       <div className="main">
-        <Header />
         <Switch>
           <Route exact path="/dashboard">
+            <Header />
             <Dashboard />
           </Route>
           <Route path="/profile">
+            <Header />
             <Profile />
           </Route>
           <Route path="/settings">
+            <Header />
             <Settings />
           </Route>
           <Route exact path="/">
+            <Header />
             <Dashboard />
           </Route>
         </Switch>
