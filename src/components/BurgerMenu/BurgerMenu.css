@@ -31,7 +31,9 @@
   height: 0.4vh;
   background: black;
   border-radius: 6vmax;
-  transition: ease-in 0.5s;
+  transition: ease-in 0.2s;
+  display: flex;
+  justify-content: center;
 }
 
 .menu-container__line::before {
@@ -40,9 +42,9 @@
   width: 1.5vw;
   height: 0.4vh;
   background: black;
-  transform: translateY(-1vh) translateX(0.2vw);
+  transform: translateY(-1vh);
   border-radius: 6vmax;
-  transition: ease-in 0.5s;
+  transition: ease-in 0.2s;
 }
 
 .menu-container__line::after {
@@ -51,9 +53,9 @@
   width: 1.5vw;
   height: 0.4vh;
   background: black;
-  transform: translateY(1vh) translateX(0.2vw);
+  transform: translateY(1vh);
   border-radius: 6vmax;
-  transition: ease-in 0.5s;
+  transition: ease-in 0.2s;
 }
 
 .menu_active .menu-container__line {
@@ -62,10 +64,9 @@
   height: 0.4vh;
   background: black;
   border-radius: 6vmax;
-  transform: translateX(-0.7vw);
   animation-name: close;
-  animation-duration: 0.5s;
-  transition: ease-in 0.5s;
+  animation-duration: 0.2s;
+  transition: ease-in 0.2s;
 }
 
 .menu_active .menu-container__line::before {
@@ -74,9 +75,10 @@
   width: 1.5vw;
   height: 0.4vh;
   background: black;
-  transform: translateY(-1vh) translateX(0.2vw);
+  transform: translateY(-1vh);
   transform: rotate(-45deg);
   border-radius: 6vmax;
+  transition: ease-in 0.2s;
 }
 
 .menu_active .menu-container__line::after {
@@ -85,9 +87,10 @@
   width: 1.5vw;
   height: 0.4vh;
   background: black;
-  transform: translateY(1vh) translateX(0.2vw);
+  transform: translateY(1vh);
   transform: rotate(45deg);
   border-radius: 6vmax;
+  transition: ease-in 0.2s;
 }
 
 @keyframes close {
