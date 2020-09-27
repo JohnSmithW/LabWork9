@@ -31,7 +31,7 @@
   height: 0.4vh;
   background: black;
   border-radius: 6vmax;
-  transition: ease-in 0.2s;
+  transition: 0.2s;
   display: flex;
   justify-content: center;
 }
@@ -44,7 +44,7 @@
   background: black;
   transform: translateY(-1vh);
   border-radius: 6vmax;
-  transition: ease-in 0.2s;
+  transition: 0.2s;
 }
 
 .menu-container__line::after {
@@ -55,42 +55,23 @@
   background: black;
   transform: translateY(1vh);
   border-radius: 6vmax;
-  transition: ease-in 0.2s;
+  transition: 0.2s;
 }
 
 .menu_active .menu-container__line {
-  position: absolute;
   width: 0;
-  height: 0.4vh;
-  background: black;
-  border-radius: 6vmax;
-  animation-name: close;
-  animation-duration: 0.2s;
-  transition: ease-in 0.2s;
 }
 
 .menu_active .menu-container__line::before {
-  position: absolute;
-  content: '';
-  width: 1.5vw;
-  height: 0.4vh;
-  background: black;
   transform: translateY(-1vh);
   transform: rotate(-45deg);
-  border-radius: 6vmax;
-  transition: ease-in 0.2s;
+  transition: 0.2s;
 }
 
 .menu_active .menu-container__line::after {
-  position: absolute;
-  content: '';
-  width: 1.5vw;
-  height: 0.4vh;
-  background: black;
   transform: translateY(1vh);
   transform: rotate(45deg);
-  border-radius: 6vmax;
-  transition: ease-in 0.2s;
+  transition: 0.2s;
 }
 
 @keyframes close {
