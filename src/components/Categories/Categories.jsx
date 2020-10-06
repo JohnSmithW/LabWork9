@@ -1,11 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, NavLink, useLocation } from 'react-router-dom';
 import { view } from '@risingstack/react-easy-state';
 import state from '../../store';
 import toggleDrawer from '../../actions/toggleDrawer';
 import './Categories.css';
 
 function Categories() {
+  const location = useLocation();
   return (
     <div className={state.isDrawerOpen ? 'categories categories_active' : 'categories'}>
       <div className="categories-container">
@@ -16,7 +17,7 @@ function Categories() {
           className="categories-container-wrapper">
           <NavLink
             className={
-              state.activePage === 'dashboard'
+              location.pathname === 'dashboard'
                 ? 'categories-container-wrapper__item categories-container-wrapper__item_active'
                 : 'categories-container-wrapper__item'
             }
@@ -34,7 +35,7 @@ function Categories() {
           className="categories-container-wrapper">
           <NavLink
             className={
-              state.activePage === 'profile'
+              location.pathname === 'profile'
                 ? 'categories-container-wrapper__item categories-container-wrapper__item_active'
                 : 'categories-container-wrapper__item'
             }
@@ -52,7 +53,7 @@ function Categories() {
           className="categories-container-wrapper">
           <NavLink
             className={
-              state.activePage === 'settings'
+              location.pathname === 'settings'
                 ? 'categories-container-wrapper__item categories-container-wrapper__item_active'
                 : 'categories-container-wrapper__item'
             }

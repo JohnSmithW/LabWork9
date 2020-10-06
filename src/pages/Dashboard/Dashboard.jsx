@@ -10,7 +10,7 @@ export default function Dashboard() {
   return (
     <>
       <Header />
-      <h1 className="dashboard">Dashboard</h1>;
+      <h1 className="dashboard">Dashboard</h1>
     </>
   );
 }
