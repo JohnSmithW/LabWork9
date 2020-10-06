@@ -9,8 +9,7 @@
         "src"
       ],
       "extensions": "css"
-    },
-    "jshint": "src/"
+    }
   },
   "scripts": {
     "start:dev": "webpack-dev-server --open",
@@ -18,7 +17,6 @@
     "eslint": "eslint src",
     "watch": "npm-watch",
     "dev-mode": "npm-run-all --parallel start:dev eslint stylelint",
-    "postinstall": "npm i -g live-server html-validate jshint",
     "run-webpack": "webpack --mode development",
     "build": "npm-run-all -p stylelint eslint run-webpack",
     "deploy": "gh-pages -d dist"

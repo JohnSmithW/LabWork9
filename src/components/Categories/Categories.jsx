@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-do
 import { view } from '@risingstack/react-easy-state';
 import state from '../../store';
 import toggleDrawer from '../../actions/toggleDrawer';
-import pages from '../../actions/pages';
 import './Categories.css';
 
 function Categories() {
