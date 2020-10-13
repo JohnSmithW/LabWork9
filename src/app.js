@@ -8,23 +8,25 @@ import './css/main.css';
 
 export default function App() {
   return (
-    <Router>
-      <div className="main">
-        <Switch>
-          <Route exact path="/dashboard">
-            <Dashboard />
-          </Route>
-          <Route path="/profile">
-            <Profile />
-          </Route>
-          <Route path="/settings">
-            <Settings />
-          </Route>
-          <Route exact path="/">
-            <Dashboard />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+    <React.StrictMode>
+      <Router>
+        <div className="main">
+          <Switch>
+            <Route exact path="/dashboard">
+              <Dashboard />
+            </Route>
+            <Route path="/profile">
+              <Profile />
+            </Route>
+            <Route path="/settings">
+              <Settings />
+            </Route>
+            <Route exact path="/">
+              <Dashboard />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    </React.StrictMode>
   );
 }

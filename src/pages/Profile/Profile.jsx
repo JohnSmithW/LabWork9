@@ -1,12 +1,8 @@
-import React, { useEffect } from 'react';
-import state from '../../store';
+import React from 'react';
 import Header from '../../components/Header/Header';
 import './Profile.css';
 
 export default function Profile() {
-  useEffect(() => {
-    state.activePage = 'profile';
-  });
   return (
     <>
       <Header />

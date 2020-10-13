@@ -1,12 +1,8 @@
-import React, { useEffect } from 'react';
-import state from '../../store';
+import React from 'react';
 import Header from '../../components/Header/Header';
 import './Settings.css';
 
 export default function Settings() {
-  useEffect(() => {
-    state.activePage = 'settings';
-  });
   return (
     <>
       <Header />
