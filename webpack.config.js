@@ -35,6 +35,7 @@ module.exports = {
   },
   plugins: [
     new HTMLWebpackPlugin({
+      title: 'My Page TItle',
       minify: {
         collapseWhitespace: true,
       },

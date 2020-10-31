@@ -1,0 +1,55 @@
+.categories-container {
+  opacity: 1;
+}
+
+.categories-container-wrapper__item {
+  text-decoration: none;
+  color: white;
+  font-size: 2vmax;
+  text-shadow: 0 0.5vmax 0.5vmax rgba(0, 0, 0, 0.25);
+}
+
+.categories-container-wrapper__item_active {
+  font-size: 2.5vmax;
+  position: relative;
+}
+
+.categories-container-wrapper__item_active::after {
+  content: '';
+  position: absolute;
+  height: 0.3vh;
+  background-color: #00ffcb;
+  width: 100%;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+
+.categories-container-wrapper {
+  margin: 2vmax;
+}
+
+.categories-container-wrapper:hover {
+  animation-name: shaking;
+  animation-duration: 0.5s;
+  transition: ease-in;
+}
+
+@keyframes shaking {
+  from {
+    transform: rotate(0);
+  }
+
+  45% {
+    transform: rotate(-10deg);
+  }
+
+  90% {
+    transform: rotate(10deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}

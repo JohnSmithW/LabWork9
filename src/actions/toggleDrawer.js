@@ -1,5 +1,5 @@
 import state from '../store';
 
-export default function handleDrawer() {
+export default function toggleDrawer() {
   state.isDrawerOpen = !state.isDrawerOpen;
 }
